@@ -38,7 +38,15 @@ class Rumus extends StatelessWidget {
                   ),
                   Container(
                     width: p,
-                    color: Colors.purple[200],
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.purple[200],
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black.withOpacity(0.7),
+                              offset: Offset(0, -5),
+                              blurRadius: 6)
+                        ]),
                     child: Center(
                       child: Column(
                         children: [
@@ -55,23 +63,59 @@ class Rumus extends StatelessWidget {
                           Container(
                             width: p - 80,
                             height: p - 120,
+                            padding: EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                                color: Colors.purple,
+                                borderRadius: BorderRadius.circular(10),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.black.withOpacity(0.5),
+                                      offset: Offset(3, -5),
+                                      blurRadius: 6)
+                                ]),
                             child: Image(
                               image: AssetImage("images/rms1.png"),
                               fit: BoxFit.fill,
                             ),
                           ),
-                          SizedBox(height: 10),
-                          Text(
-                              "Sesuaikan pengunaan rumus dari data yang diketahui pada soal, misalnya ingin mencari t jika diketahui vt, v0, dan a pada soal, kita dapat menggunakan rumus 1.  "),
+                          SizedBox(height: 20),
+                          Container(
+                            margin: EdgeInsets.all(2),
+                            padding: EdgeInsets.all(6),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.greenAccent,
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.black.withOpacity(0.7),
+                                      offset: Offset(3, -5),
+                                      blurRadius: 6)
+                                ]),
+                            child: Center(
+                              child: Text(
+                                  "Sesuaikan pengunaan rumus dari data yang diketahui pada soal,\nmisalnya ingin mencari t jika diketahui vt, v0, dan a,\nkita dapat menggunakan rumus no 1.  "),
+                            ),
+                          ),
                           SizedBox(
                             height: 20,
                           ),
-                          Text(
-                            "Note : jika GLBB diperlambat maka percepatannya (a) negatif",
-                            style: TextStyle(color: Colors.brown),
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: Colors.amber,
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.black.withOpacity(0.7),
+                                      offset: Offset(0, -5),
+                                      blurRadius: 6)
+                                ]),
+                            child: Text(
+                              "Note :\njika GLBB diperlambat maka percepatannya (a) negatif",
+                            ),
                           ),
                           SizedBox(
-                            height: 400,
+                            height: 300,
                           ),
                         ],
                       ),

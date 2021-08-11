@@ -21,37 +21,37 @@ class Pembahasan extends StatelessWidget {
             Column(
               children: [
                 buildText("Pembahasan 1", Colors.red),
-                buildCard(Colors.amber, AssetImage("images/ct1.png")),
+                buildCard(AssetImage("images/ct1.png")),
                 SizedBox(
                   height: 40,
                 ),
-                buildText("Pembahasan 2", Colors.green),
-                buildCard(Colors.pink, AssetImage("images/ct2.png")),
+                buildText("Pembahasan 2", Colors.orange),
+                buildCard(AssetImage("images/ct2.png")),
                 SizedBox(
                   height: 40,
                 ),
                 buildText("Pembahasan 3", Colors.purple),
-                buildCard(Colors.green, AssetImage("images/ct3.png")),
+                buildCard(AssetImage("images/ct3.png")),
                 SizedBox(
                   height: 40,
                 ),
                 buildText("Pembahasan 4", Colors.blue),
-                buildCard(Colors.purple, AssetImage("images/ct4.png")),
+                buildCard(AssetImage("images/ct4.png")),
                 SizedBox(
                   height: 40,
                 ),
                 buildText("Pembahasan 5", Colors.pink),
-                buildCard(Colors.blue, AssetImage("images/ct5.png")),
+                buildCard(AssetImage("images/ct5.png")),
                 SizedBox(
                   height: 40,
                 ),
                 buildText("Pembahasan 6", Colors.amber),
-                buildCard(Colors.brown, AssetImage("images/ct6.png")),
+                buildCard(AssetImage("images/ct6.png")),
                 SizedBox(
                   height: 40,
                 ),
-                buildText("Pembahasan 7", Colors.greenAccent),
-                buildCard(Colors.black, AssetImage("images/ct7.png")),
+                buildText("Pembahasan 7", Colors.indigoAccent),
+                buildCard(AssetImage("images/ct7.png")),
                 SizedBox(
                   height: 400,
                 ),
@@ -71,7 +71,7 @@ class Pembahasan extends StatelessWidget {
     );
   }
 
-  Container buildCard(Color color, AssetImage assetimage) {
+  Container buildCard(AssetImage assetimage) {
     return Container(
       margin: EdgeInsets.all(6),
       padding: EdgeInsets.fromLTRB(2, 10, 2, 10),
