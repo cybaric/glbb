@@ -73,7 +73,7 @@ class Pembahasan extends StatelessWidget {
 
   Container buildCard(Color color, AssetImage assetimage) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.all(6),
       padding: EdgeInsets.fromLTRB(2, 10, 2, 10),
       child: Image(
         image: assetimage,
