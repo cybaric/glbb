@@ -71,16 +71,19 @@ class Pembahasan extends StatelessWidget {
     );
   }
 
-  Card buildCard(Color color, AssetImage assetimage) {
-    return Card(
-      color: color,
-      elevation: 10,
-      child: Container(
-        margin: EdgeInsets.fromLTRB(2, 10, 2, 10),
-        child: Image(
-          image: assetimage,
-        ),
+  Container buildCard(Color color, AssetImage assetimage) {
+    return Container(
+      margin: EdgeInsets.all(10),
+      padding: EdgeInsets.fromLTRB(2, 10, 2, 10),
+      child: Image(
+        image: assetimage,
       ),
+      decoration: BoxDecoration(boxShadow: [
+        BoxShadow(
+            color: Colors.black.withOpacity(0.7),
+            offset: Offset(3, 5),
+            blurRadius: 6),
+      ], color: Colors.green, borderRadius: BorderRadius.circular(6)),
     );
   }
 }
